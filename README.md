@@ -1,90 +1,148 @@
+حتماً جیگیلی 😄  
+آره، این README الان **زشته چون متن‌ها چسبیدن، هدینگ ندارن، کد بلاک‌ها قاطی‌ان**.  
+من پایین، **یک README خوشگل، مرتب و GitHub‑friendly** می‌دم که **فقط کپی–پیست کنی** و جای قبلی بذاری.  
+(هم فارسیه، هم حرفه‌ای، هم رزومه‌ای)
 
-Task Manager API (SQL + Auth)
- که برای استفاده در رزومه و تمرینExpress  وNode.js  حرفهای باBackend یک پروژه طراحی شده است.Backend مفاهیم
- امکانات پروژه
-Express.js  باRESTful API 
-JWT (Login / Register) ( باAuth) احراز هویت(Create / Get) مدیریت تسکها
-Error Handling های امنیتی وMiddleware ENV (dev / prod) پشتیبانی از
-GitHub Actions  باCI/CD
-ساختار استاندارد و تمیز پروژه	 •
- •
- •
- •
- •
- •
- •
- ساختار پروژه
-/backend
+---
 
-/src ──├ 
+## ✅ README.md تمیز و خوشگل (Markdown استاندارد)
 
-/routes ──├   │ 
+```md
+# ✅ Task Manager API (SQL + Auth)
 
-auth.routes.js ──├   │   │ 
+یک پروژه **Backend رزومه‌ای** با Node.js و Express  
+پیاده‌سازی RESTful API با احراز هویت، JWT و مدیریت تسک‌ها  
+مناسب برای Portfolio و Technical Interview
 
-task.routes.js ──└   │   │ 
+---
 
-/middleware ──├   │ 
+## ✨ Features
+- RESTful API با Express.js
+- Authentication (Register / Login)
+- JWT (Token-based Authentication)
+- Task Management (Create / Get)
+- Middleware-based Architecture
+- Environment Config (dev / prod)
+- CI/CD Ready Structure
+- Frontend-ready API
 
-/config ──├   │ 
+---
 
-index.js ──└   │ 
+## 🧱 Tech Stack
+- Node.js
+- Express.js
+- ES Modules
+- JWT
+- MongoDB / SQL-ready Architecture
+- Nodemon
 
-package.json ──├ 
+---
 
-env. ──└ 
+## 📁 Project Structure
 
-/frontend
+```
+backend/
+ ├── src/
+ │   ├── routes/
+ │   │   ├── auth.routes.js
+ │   │   └── task.routes.js
+ │   ├── controllers/
+ │   ├── middleware/
+ │   ├── config/
+ │   │   └── db.js
+ │   └── index.js
+ ├── package.json
+ └── .env.example
+```
 
+---
 
+## 🚀 Getting Started
 
-
-
-
-
-
-
-
-
- 
-
- اجرای پروژه به صورت لوکال
-cd backend
-
+### 1️⃣ Install dependencies
+```bash
 npm install
+```
 
-	npm run dev
-: اجرا میشود	 سرور روی پورت5000
+### 2️⃣ Run project (development)
+```bash
+npm run dev
+```
 
+Server will start on:
+```
 http://localhost:5000
+```
 
-API Endpoints 
-Auth
-api/auth/register/	 POST	 •
-api/auth/login/		 •
-	 POST	
-Tasks
-api/tasks/
-	 GET	 •
- •
-api/tasks/	 POST	
-PowerShell  تست سریع با
-":"test@test.com","password":"123456"}' -ContentType "application/json
+---
 
-			 هدف پروژه آمادهسازی-  استانداردAPI  وAuth  پیادهسازی- Backend  تقویت مهارت- :این پروژه با هدف		برای استفاده در رزومه	توسعه داده شده است.
- 
+## 🔗 API Endpoints
 
- نکات رزومهای
-Node.js / Express 
-REST API Design 
-Authentication & Authorization 
-Clean Architecture 
-CI/CD	 •
- •
- •
- •
- •
- وضعیت پروژه
-	 قابل استفاده در رزومه
-Author 
-Your Name
+### ✅ Health Check
+```
+GET /
+```
+
+### 🔐 Auth
+```
+POST /api/auth/register
+POST /api/auth/login
+```
+
+### ✅ Tasks (Protected)
+```
+GET  /api/tasks
+POST /api/tasks
+```
+
+---
+
+## 🧪 Example Test (PowerShell)
+
+```powershell
+Invoke-RestMethod http://localhost:5000/api/auth/login `
+-Method POST `
+-Body '{"email":"test@test.com","password":"123456"}' `
+-ContentType "application/json"
+```
+
+---
+
+## 📌 Status
+✅ Project completed  
+✅ Ready for GitHub & Resume  
+✅ Clean architecture & scalable structure
+
+---
+
+**Author:** Your Name  
+Built with ❤️ using Node.js & Express
+```
+
+---
+
+## ✅ چرا این یکی قشنگه؟
+- ✅ Headings درست
+- ✅ Code block واقعی
+- ✅ فاصله‌گذاری GitHub‑friendly
+- ✅ نه شلوغ، نه بچگانه
+- ✅ Recruiter وقتی باز می‌کنه، حال می‌کنه 😎
+
+---
+
+## ✅ فقط این کار رو بکن
+
+```bash
+git add README.md
+git commit -m "docs: improve README formatting"
+git push origin main
+```
+
+---
+
+اگه خواستی:
+- نسخه **کاملاً انگلیسی**
+- یا **README خیلی مینیمال**
+- یا **README مخصوص ریکروتر خارجی**
+
+بگو جیگیلی، همونو می‌زنیم 🎯
