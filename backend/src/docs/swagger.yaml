@@ -1,0 +1,24 @@
+﻿openapi: 3.0.0
+info:
+  title: Task Manager API
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000
+paths:
+  /api/auth/login:
+    post:
+      summary: Login user
+      responses:
+        "200":
+          description: Success
+  /api/tasks:
+    get:
+      summary: Get user tasks
+      security:
+        - bearerAuth: []
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
