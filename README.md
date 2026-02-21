@@ -106,7 +106,7 @@ Invoke-RestMethod http://localhost:5000/api/auth/login `
 
 ---
 
-**Author:** Your Name  
+**Author:** Alireza Naseri
 Built with ❤️ using Node.js & Express
 ```
 
